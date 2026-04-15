@@ -1,0 +1,19 @@
+Name of Quantlet: VaR_CEE_TimesFM
+
+Published in: 'Zero-Shot Foundation Models for VaR and ES Forecasting in CEE Markets'
+
+Description: Generates zero-shot VaR and ES forecasts using Google TimesFM 2.5 foundation model. Fits a Student-t distribution to the model's output quantiles via quantile matching optimization and derives VaR/ES from the fitted parametric distribution.
+
+Keywords: TimesFM, foundation model, zero-shot forecasting, Value-at-Risk, Expected Shortfall, Student-t distribution, quantile matching, time series
+
+Author: Daniel Traian Pele
+
+Submitted: 15 April 2026
+
+Datafile: ../data/processed/{country}_returns.parquet
+
+Input: Log return series, 512-day context window, VaR levels (1%, 2.5%, 5%)
+
+Output: CSV files with daily VaR and ES forecasts per series in ../data/var_forecasts/
+
+Example: Loads TimesFM-2.5-200M, forecasts quantiles for BET_ret, fits Student-t and computes VaR at 1%

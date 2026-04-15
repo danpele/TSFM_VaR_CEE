@@ -1,0 +1,19 @@
+Name of Quantlet: VaR_CEE_Figures
+
+Published in: 'Zero-Shot Foundation Models for VaR and ES Forecasting in CEE Markets'
+
+Description: Generates all six publication-quality figures: VaR breach plots, violation rate comparison, Basel traffic light dashboard heatmap, ES adequacy bar chart, Kupiec p-value heatmap, and cross-country model ranking. All figures use transparent backgrounds and legends positioned outside the plot area.
+
+Keywords: data visualization, matplotlib, VaR breach plot, traffic light dashboard, heatmap, model comparison, publication figures
+
+Author: Daniel Traian Pele
+
+Submitted: 15 April 2026
+
+Datafile: ../data/var_forecasts/*.csv, ../data/backtesting/backtesting_results.csv
+
+Input: VaR forecast files and backtesting results for all models and series
+
+Output: Six figures (PNG and PDF) saved in ../data/figures/: fig1_var_breach, fig2_violation_rates, fig3_traffic_light, fig4_es_adequacy, fig5_kupiec_heatmap, fig6_model_ranking
+
+Example: Creates a 3x2 panel of VaR breach plots comparing GJR-GARCH vs TimesFM-2.5-Conf for five CEE stock indices
