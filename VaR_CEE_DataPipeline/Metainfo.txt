@@ -1,6 +1,6 @@
 Name of Quantlet: VaR_CEE_DataPipeline
 
-Published in: 'Zero-Shot Foundation Models for VaR and ES Forecasting in CEE Markets'
+Published in: 'Can Foundation Models Manage Risk? Zero-Shot VaR and ES Forecasting with Conformal Calibration in CEE Markets'
 
 Description: Computes log returns from raw price data and produces descriptive statistics including mean, standard deviation, skewness, kurtosis, Jarque-Bera, ADF, and ARCH-LM tests for all CEE market series.
 

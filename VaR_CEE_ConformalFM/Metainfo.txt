@@ -1,6 +1,6 @@
 Name of Quantlet: VaR_CEE_ConformalFM
 
-Published in: 'Zero-Shot Foundation Models for VaR and ES Forecasting in CEE Markets'
+Published in: 'Can Foundation Models Manage Risk? Zero-Shot VaR and ES Forecasting with Conformal Calibration in CEE Markets'
 
 Description: Applies rolling conformal calibration on top of raw foundation model VaR forecasts. For each date, computes conformal scores from the calibration window and adjusts the VaR forecast by the empirical quantile of these scores. Also recalibrates ES using tail returns below the adjusted VaR.
 

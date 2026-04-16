@@ -1,6 +1,6 @@
 Name of Quantlet: VaR_CEE_GJRGARCH
 
-Published in: 'Zero-Shot Foundation Models for VaR and ES Forecasting in CEE Markets'
+Published in: 'Can Foundation Models Manage Risk? Zero-Shot VaR and ES Forecasting with Conformal Calibration in CEE Markets'
 
 Description: Implements GJR-GARCH(1,1) with skewed-t distribution for VaR and ES forecasting using a rolling 250-day window with daily refitting. Falls back to normal distribution if skewed-t fails to converge.
 

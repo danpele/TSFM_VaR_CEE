@@ -1,6 +1,6 @@
 Name of Quantlet: VaR_CEE_Moirai
 
-Published in: 'Zero-Shot Foundation Models for VaR and ES Forecasting in CEE Markets'
+Published in: 'Can Foundation Models Manage Risk? Zero-Shot VaR and ES Forecasting with Conformal Calibration in CEE Markets'
 
 Description: Generates zero-shot VaR and ES forecasts using the Moirai foundation model (Salesforce). Produces 1000 Monte Carlo forecast samples per date using a 512-day context window via the uni2ts/GluonTS interface and derives VaR/ES from the empirical distribution of samples.
 

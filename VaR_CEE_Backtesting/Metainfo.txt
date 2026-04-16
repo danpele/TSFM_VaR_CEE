@@ -1,6 +1,6 @@
 Name of Quantlet: VaR_CEE_Backtesting
 
-Published in: 'Zero-Shot Foundation Models for VaR and ES Forecasting in CEE Markets'
+Published in: 'Can Foundation Models Manage Risk? Zero-Shot VaR and ES Forecasting with Conformal Calibration in CEE Markets'
 
 Description: Performs comprehensive VaR and ES backtesting using Kupiec unconditional coverage test, Christoffersen conditional coverage test, Acerbi-Szekely Z2 test for ES, and Basel traffic light classification. Evaluates all 10 models across all CEE series.
 
