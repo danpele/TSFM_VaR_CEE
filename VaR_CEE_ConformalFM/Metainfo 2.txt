@@ -1,0 +1,19 @@
+Name of Quantlet: VaR_CEE_ConformalFM
+
+Published in: 'Zero-Shot Foundation Models for VaR and ES Forecasting in CEE Markets'
+
+Description: Applies rolling conformal calibration on top of raw foundation model VaR forecasts. For each date, computes conformal scores from the calibration window and adjusts the VaR forecast by the empirical quantile of these scores. Also recalibrates ES using tail returns below the adjusted VaR.
+
+Keywords: conformal prediction, calibration, foundation model, Value-at-Risk, Expected Shortfall, distribution-free, post-hoc correction
+
+Author: Daniel Traian Pele
+
+Submitted: 15 April 2026
+
+Datafile: ../data/var_forecasts/Chronos-2_*.csv, ../data/var_forecasts/TimesFM-2.5_*.csv, ../data/var_forecasts/Moirai-2.0_*.csv
+
+Input: Raw foundation model VaR forecasts, rolling calibration window of 250 days
+
+Output: Conformally-adjusted VaR/ES forecasts saved as {Model}-Conf_{series}.csv in ../data/var_forecasts/
+
+Example: Reads Chronos-2_BET_ret.csv, applies 250-day rolling conformal correction, saves Chronos-2-Conf_BET_ret.csv
