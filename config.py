@@ -1,7 +1,7 @@
 """
 Shared configuration for all VaR_CEE Quantlets.
 
-Published in: 'Zero-Shot Foundation Models for VaR and ES Forecasting in CEE Markets'
+Published in: 'Can Foundation Models Manage Risk? Zero-Shot VaR and ES Forecasting with Conformal Calibration in CEE Markets'
 
 This file defines paths, market definitions, VaR parameters, and model
 lists used by every Quantlet in this collection.  Each Quantlet imports

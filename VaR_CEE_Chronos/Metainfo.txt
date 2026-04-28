@@ -2,9 +2,9 @@ Name of Quantlet: VaR_CEE_Chronos
 
 Published in: 'Can Foundation Models Manage Risk? Zero-Shot VaR and ES Forecasting with Conformal Calibration in CEE Markets'
 
-Description: Generates zero-shot VaR and ES forecasts using the Chronos-2 foundation model (Amazon). Produces 1000 Monte Carlo forecast samples per date using a 512-day context window and derives VaR/ES from the empirical distribution of samples.
+Description: Generates zero-shot VaR and ES forecasts using the Chronos-2 Bolt foundation model (Amazon). Obtains 9 quantile forecasts (10th–90th percentiles), fits a Student-t distribution via quantile matching, and extracts VaR/ES analytically from the fitted distribution.
 
-Keywords: Chronos, foundation model, zero-shot forecasting, Value-at-Risk, Expected Shortfall, time series, transformer, probabilistic forecasting
+Keywords: Chronos, Chronos-Bolt, foundation model, zero-shot forecasting, Value-at-Risk, Expected Shortfall, time series, transformer, quantile forecasting, Student-t
 
 Author: Daniel Traian Pele
 
@@ -12,8 +12,8 @@ Submitted: 15 April 2026
 
 Datafile: ../data/processed/{country}_returns.parquet
 
-Input: Log return series, 512-day context window, 1000 samples per forecast, VaR levels (1%, 2.5%, 5%)
+Input: Log return series, 512-day context window, 9 quantile forecasts per date, VaR levels (1%, 2.5%, 5%)
 
 Output: CSV files with daily VaR and ES forecasts per series in ../data/var_forecasts/
 
-Example: Loads Chronos-T5-base, generates 1000 samples (in chunks of 200) for SOFIX_ret, computes VaR as empirical quantile of samples
+Example: Loads Chronos-Bolt-base, produces 9 quantile forecasts for SOFIX_ret, fits Student-t and computes VaR/ES analytically
